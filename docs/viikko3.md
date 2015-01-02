@@ -1,1 +1,9 @@
- 
+Robottiohjelmoinnin harjoitustyö, viikkoraportti 3. 02.01.2015
+
+Tällä viikolla olen rakentanut robotin mallia explorer (http://www.nxtprograms.com/explorer/steps.html). Siinä on painesensori sekä tutkasensori. Se liikkuu kahdella pyörällä, joissa erilliset moottorit, sekä edessä vielä pieni Castor-kääntöpyörä. Java-koodin pohjaksi otin Bumber Car -esimerkin.
+
+Robotti kääntyy osuessaan esteeseen tai tutkan huomattua esteen enintään 25 sentin päässä. Yksi osa puuttui rakennussarjasta, joten en saanut painesensoria suoraan. Se toimii huonosti, täytyy vielä vähän viritellä sitä. Tutka toimii hyvin, mutta havaitsee vain omalla korkeudellaan edessä olevat esteet. Tein roboon toiminnallisuuden, että tutka pyörii puoli kierrosta molempiin suuntiin robotin pysähdyttyä esteeseen, jotta havaintokenttä vähän kasvaisi. Jostain syystä käännös 180 ja -180 ei palauta sensoria alkuasentoon, tuokin vaatii vielä vähän virittelyä. Jotta tulisi vähän vaativuutta ohjelmaan, teen viikonloppuna vielä graafisen tulostuksen tutkan havaitsemista esteistä robotin näytölle, esim. tähtirivi/kohde, jossa tähtien määrä kertoo etäisyyden kohteeseen. Toteutusta pitää vielä vähän miettiä.
+
+Tuo a*-algoritmin hyödyntäminen myös kutkuttaisi. Mietin toteutusta, jossa syötettäisiin robotin näytöltä gridi robon toimintonäppäimillä, esim. vasen=tyhjä, oikea=este.Sitten voisi laskea lyhimmän polun kahden pisteen välillä noilla LejOS:n valmiilla luokilla, niin että robo kiertäisi gridillä annetut esteet. Siinä pitäisi kyllä olla robolle varmaan joku kulkualusta, jossa ruudukko, ja ruuduille sijoitettaisiin esteet. Nyt on kuitenkin niin vähän aikaa jäljellä ja lomareissu kahmaisi viikon toteutusajasta, että taidan pysytellä noissa perustoiminnoissa ja hioa ne mahdollisimman toimiviksi.
+
+Päivitin suunnitelmaan graafisen tulostuksen + muut muutokset toteutuksessa.
